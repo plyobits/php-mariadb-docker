@@ -16,8 +16,8 @@ services:
       - 8000:80
 
     volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
-      - ./app:/app
+      - ${nginx_conf}:/etc/nginx/conf.d/default.conf
+      - ${app_dir}:/app
 
     depends_on:
       - php
