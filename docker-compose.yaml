@@ -28,7 +28,7 @@ services:
       dockerfile: php.Dockerfile
 
     volumes:
-      - ./app:/app
+      - ${app_dir}:/app
 
     depends_on:
       - mariadb
