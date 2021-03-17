@@ -29,6 +29,7 @@ services:
 
     volumes:
       - ${app_dir}:/app
+      - ./php-conf/debug.conf:/usr/local/etc/php-fpm.d/debug.conf
 
     depends_on:
       - mariadb
